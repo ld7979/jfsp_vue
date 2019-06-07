@@ -26,7 +26,6 @@
         <div class="pubt-box" style="display:none">
           <a href="javascript:;">发布菜单</a>
           <a href="javascript:;">创建菜单</a>
-          <a href="javascript:;">123</a>
         </div>
       </div>
       <div class="perinfo">
