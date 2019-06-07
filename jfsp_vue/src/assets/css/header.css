@@ -1,0 +1,141 @@
+body{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+ul,li,p{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a{text-decoration: none;}
+.clearfix{ clear: both;}
+.clearfix:after{
+content: "";
+display: block;
+clear: both;
+}
+.left{float: left;}
+*{box-sizing: border-box;}
+
+#header{
+  width:100%;
+  background:#fff;
+  position: fixed;
+  top:0;
+  left:0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+/* 导航栏 */
+#header .nav{
+  width:1000px;
+  height:60px;
+  padding:15px 0;
+  margin:0 auto;
+  
+}
+/* logo */
+.logo>img{
+  height:30px;
+  vertical-align: bottom;
+}
+/* 导航列表 */
+.ul_nav{
+  float: left;
+  margin-left:32px;
+}
+.ul_nav li{
+  float: left;
+  margin-right:24px;
+  line-height: 35px;
+}
+.ul_nav li>a,.perinfo>a{
+  font-size:15px;
+  color:#000;
+}
+.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover{
+  color:#FFB31A;
+}
+.ul_nav li.act>a{
+  color:#FFB31A;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #FFB31A;
+}
+/* 菜谱旁边图标 */
+.nass{
+  width:12px;
+  height:6px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../image/more1-1.png)
+}
+/* 搜索 */
+.search{
+  float: left;
+  position: relative;
+  height: 30px;
+}
+.search>input{
+  float: left;
+  width:182px;
+  height:30px;
+  padding:7px 10px;
+  font-size:12px;
+  color:#999;
+  background: #F7F7F7;
+  border:0;
+  outline: 0;
+  border-top-left-radius:4px;
+  border-bottom-left-radius: 4px;
+}
+.sear{
+  float: left;
+  width:38px;
+  height:30px;
+  background: #eee url(../image/search.png) no-repeat center center ;
+  border:0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* 发布 */
+.pubt{
+  margin-left:15px;
+  float: left;
+  position: relative;
+}
+.pubt>a{
+  width:60px;
+  height:30px;
+  display: block;
+  background: #FFB31A;
+  text-align: center;
+  line-height: 30px;
+  font-size:14px;
+  color:#fff;
+  border-radius: 4px;
+}
+/* 发布隐藏的 */
+.pubt-box{
+  width:130px;
+  background:#fff;
+  position: absolute;
+  top:45px;
+  left:-35px;
+  box-shadow:0 0 5px 0 rgba(64,71,81,0.10);
+  padding:8px;
+  border-radius: 5px;
+}
+.pubt-box>a{
+  display: block;
+  line-height: 30px;
+  font-size:13px;
+  color:#333;
+}
+/* 登录 */
+.perinfo{
+  float: left;
+  margin-left:40px;
+  height: 30px;
+  line-height: 30px;
+}
