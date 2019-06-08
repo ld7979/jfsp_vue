@@ -70,6 +70,26 @@ clear: both;
   vertical-align: middle;
   background-image: url(../image/more1-1.png)
 }
+/* 菜谱隐藏 */
+.ctip{
+  width:492px;
+  height:483px;
+  background-color:#fff;
+  position: absolute;
+  top:45px;
+  left:-162px;
+  z-index: 99;
+  padding:0 16px;
+  box-shadow:0 2px 5px 0 rgba(64,71,81,0.10);
+  font-size:14px;
+  text-align: left;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.ctab{
+  line-height: 55px;
+}
+
 /* 搜索 */
 .search{
   float: left;
