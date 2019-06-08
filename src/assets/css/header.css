@@ -53,7 +53,7 @@ clear: both;
   font-size:15px;
   color:#000;
 }
-.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover,.ctab a:hover{
+.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover,.ctab a:hover,.citem>div>a:hover{
   color:#FFB31A;
 }
 .ul_nav li.act>a{
@@ -73,7 +73,7 @@ clear: both;
 /* 菜谱隐藏 */
 .ctip{
   width:492px;
-  height:483px;
+  height:380px;
   background-color:#fff;
   position: absolute;
   top:45px;
@@ -114,6 +114,27 @@ clear: both;
 .citem>div{
   width:380px;
   float: left;
+}
+.citem>div>a{
+  width:95px;
+  line-height: 46px;
+  display: inline-block;
+  color:#333;
+}
+.citem>div>a:last-child{
+  color:#256DC6;
+}
+.citem>div>a:last-child img,.cmore a>img{
+  vertical-align: middle;
+  position: relative;
+  top:-1px;
+  height:12px;
+}
+.cmore{
+  text-align: center;
+}
+.cmore a{
+  color:#256DC6;
 }
 /* 搜索 */
 .search{
