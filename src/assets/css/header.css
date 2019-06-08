@@ -53,7 +53,7 @@ clear: both;
   font-size:15px;
   color:#000;
 }
-.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover{
+.ul_nav li>a:hover,.perinfo>a:hover,.pubt-box>a:hover,.ctab a:hover{
   color:#FFB31A;
 }
 .ul_nav li.act>a{
@@ -89,7 +89,32 @@ clear: both;
 .ctab{
   line-height: 55px;
 }
-
+.ctab a{
+  display: inline-block;
+  color:#383830;
+  margin-right:43px;
+}
+.ctab a img{
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.citem{
+  border-top:1px solid #E5E3DF;
+}
+.citem>span{
+  float: left;
+  width:64px;
+  text-align: center;
+  font-weight: bold;
+  color:#333;
+  line-height: 46px;
+  margin-right:16px;
+} 
+.citem>div{
+  width:380px;
+  float: left;
+}
 /* 搜索 */
 .search{
   float: left;

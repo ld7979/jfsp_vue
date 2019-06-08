@@ -16,6 +16,22 @@
                 <img src="images/header/jx3.png" >
                 精选
               </a>
+              <a href="javascript:;" target="_blank">
+                <img src="images/header/menu3.png" >
+                菜单
+              </a>
+            </div>
+            <div class="cblok clearfix">
+              <div class="citem clearfix">
+                <span>食材</span>
+                <div class=" clearfix">
+                  <a href="javascript:;" target="_blank">猪肉</a>
+                  <a href="javascript:;" target="_blank">猪肉</a>
+                  <a href="javascript:;" target="_blank">猪肉</a>
+                  <a href="javascript:;" target="_blank">猪肉</a>
+                  <a href="javascript:;" target="_blank">猪肉</a>
+                </div>
+              </div>
             </div>
           </div>
         </li>
