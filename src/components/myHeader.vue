@@ -92,8 +92,8 @@
         </div>
       </div>
       <div class="perinfo">
-        <a href="javascript">登录</a> | 
-        <a href="Javascript:;">注册</a>
+        <a href="#/login">登录</a> | 
+        <a href="#/reg">注册</a>
       </div>
     </nav>
   </header>

@@ -10,7 +10,7 @@
       <div class="dglo">
         <div class="dlzc">
           <span>登录</span>
-          <span><a href="javascript:;">去注册 &gt;</a></span>
+          <span><a href="#/reg">去注册 &gt;</a></span>
         </div>
         <div class="logone">
           <div class="inp">
