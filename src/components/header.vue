@@ -2,7 +2,7 @@
   <div class="l_top">
     <div class="l_logo">
       <a href="/">
-        <img src="images/header/logo3.png">
+        <img title="豆果美食" src="images/header/logo3.png">
       </a>
     </div>
   </div>
