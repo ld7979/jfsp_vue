@@ -10,20 +10,21 @@
       <div class="dglo">
         <div class="dlzc">
           <span>登录</span>
-          <span><a href="#/reg">去注册 &gt;</a></span>
+          <span><router-link to="/reg">去注册 &gt;</router-link></span>
         </div>
         <div class="logone">
           <div class="inp">
-            <input id="username" placeholder="请输入手机号" class="udl" type="text">
+            <input  v-model="uname" id="username" placeholder="请输入手机号" class="udl" type="text">
           </div>
           <div class="inp">
-            <input id="password" placeholder="请输入密码" class="udl" maxlength="20" type="password">
+            <input v-model="upwd" id="password" placeholder="请输入密码" class="udl" maxlength="20" type="password">
           </div>
           <div class="forg">
             <a href="javascript:;">忘记密码&gt;</a>
+            <span id="err" class="twro" style="margin-left:20px;visibility: visible;"></span>
           </div>
           <div class="dlbtn">
-            <a href="javascript:;">登录</a>
+            <router-link @click.native="log" to="/login">登录</router-link>
           </div>
           <div class="other">
             <p>使用社交账号登录豆果美食</p>
@@ -44,9 +45,29 @@ import lheader from '../components/header'
 import lfooter from '../components/footer'
 export default {
   data(){
-    return {}
+    return {
+      uname:"",
+      upwd:""
+    }
   },
-  components:{lheader,lfooter}
+  watch:{
+    uname(){
+      this.log();
+    }
+  },
+  components:{lheader,lfooter},
+  methods:{
+    log(){
+      if(this.uname===""){
+        err.innerHTML="手机号不能为空"
+      }else  if(this.upwd===""){
+        err.innerHTML="密码不能小于6位"
+      }
+     if(!/^1[3-9]\d{9}$/.test(this.uname)){  
+        err.innerHTML="手机号错误"; 
+      }        
+    }
+  }
 }
 </script>
 
@@ -144,6 +165,13 @@ export default {
   }
   .forg>a:hover{
     text-decoration: underline;
+  }
+  .twro{
+    padding: 5px 0 10px 0;
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    color: #ff0000;
   }
   .dlbtn{
     margin-bottom: 10px;
