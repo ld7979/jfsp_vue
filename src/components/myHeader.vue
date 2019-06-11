@@ -107,6 +107,8 @@ export default {
       cdisp:false,
       fdisp:false,
       tasks:[
+        // {name:"首页",method:"/"},
+        // {name:"菜谱",method:"/"},
         {name:"笔记",method:"/"},
         {name:"主题站",method:"/"},
         {name:"商城",method:"/"},
