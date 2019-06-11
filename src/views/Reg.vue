@@ -197,7 +197,6 @@ export default {
    width:200px;
    height:32px;
    line-height: 32px;
-   display: inline-block;
    font-size:12px;
    color:#f00;
    margin-top:3px;
