@@ -5,37 +5,37 @@
       <div class="bgr">
         <div class="thed">
           <span>新用户注册</span>
-          <span>已有账号，<a href="#/login">直接登录 &gt;</a></span>
+          <span>已有账号，<router-link to="/login">直接登录 &gt;</router-link></span>
         </div>
         <div class="logbox">
           <div class="clearfix">
             <div class="iput">
-              <input id="username" placeholder="请输入手机号"  class="wid" type="text">
+              <input v-model="uname"   @blur.prevent="unameBlur"  id="username" placeholder="请输入手机号"  class="wid" type="text">
             </div>
             <span class="lowrong" id="err_username"><p></p></span>
           </div>
           <div class="iisi" style="visibility: visible;">输入常用的手机号，便于登录和找回密码</div>
           <div class="clearfix">
             <div class="iput">
-              <input id="nickname" placeholder="请输入昵称"  class="wid" maxlength="16" type="text">
+              <input v-model="Nname" id="nickname"  @focus.prevent="nameFocus" @blur.prevent="nameBlur" placeholder="请输入昵称"  class="wid" maxlength="16" type="text">
             </div>
             <span class="lowrong" id="err_nickname"><p></p></span>
           </div>
-          <div class="iisi">中英文均可，最多16个字喔~</div>
+          <div id="Nname" class="iisi">中英文均可，最多16个字喔~</div>
           <div class="clearfix">
             <div class="iput">
-              <input id="password" placeholder="请输入密码"  class="wid" maxlength="20" type="password">
+              <input v-model="upwd" @blur.prevent="upwdBlur" @focus.prevent="upwdFocus" id="password" placeholder="请输入密码" class="wid" maxlength="20" type="password">
             </div>
             <span class="lowrong" id="err_password"><p></p></span>
           </div>
-          <div class="iisi">密码长度为6-20位，不能含有空格</div>
+          <div id="upwd" class="iisi">密码长度为6-20位，不能含有空格</div>
           <div class="clearfix">
             <div class="iput">
-              <input id="dpasswd" placeholder="确认密码"  class="wid" maxlength="20" type="password">
+              <input v-model="dpass" @blur.prevent="dpassBlur" @focus.prevent="dpassFocus" id="dpasswd" placeholder="确认密码"  class="wid" maxlength="20" type="password">
             </div>
             <span class="lowrong" id="err_dpasswd"><p></p></span>
           </div>
-          <div class="iisi">再输入一次密码</div>
+          <div id="dpass" class="iisi">再输入一次密码</div>
           <div class="clearfix" id="yzm_div">
             <div class="yzm">
               <input id="code" class="yzma" maxlength="6" placeholder="输入验证码" type="text">
@@ -49,9 +49,9 @@
             <p class="tong">
               <input type="checkbox" checked id="agreement">
               我已阅读并且同意
-              <a href="javascript:;" target="_blank" title="用户协议">豆果美食使用协议</a> 
+              <router-link to="javascript:;" target="_blank" title="用户协议">豆果美食使用协议</router-link> 
             </p>
-            <button id="signup" class="btnreg">注册</button>
+            <button id="signup" @click="" class="btnreg">注册</button>
           </div>
         </div>
       </div>
@@ -65,9 +65,61 @@ import lheader from '../components/header'
 import lfooter from '../components/footer'
 export default {
   data(){
-    return {}
+    return {
+      uname:"",
+      Nname:"",
+      upwd:"",
+      dpass:"",
+    }
   },
-  components:{lheader,lfooter}
+  components:{lheader,lfooter},
+  watch:{
+    uname(){
+      this.unameBlur()
+    }
+  },
+  methods:{
+    nameFocus(){
+      Nname.style.visibility="visible";
+    },
+    upwdFocus(){
+      upwd.style.visibility="visible";
+    },
+    dpassFocus(){
+      dpass.style.visibility="visible";
+    },
+    unameBlur(){
+      if(this.uname===""){
+        err_username.firstElementChild.innerHTML="请输入手机号";
+      }else if(!/^1[3-9]\d{9}$/.test(this.uname)){  
+        err_username.firstElementChild.innerHTML="手机号码格式错误";
+      }else{
+        err_username.firstElementChild.innerHTML="";
+      }
+    },
+    nameBlur(){
+      if(this.Nname===""){
+        err_nickname.firstElementChild.innerHTML="请输入2~16个字的昵称";
+      }else{
+        err_nickname.firstElementChild.innerHTML="";
+      }
+    },
+    upwdBlur(){
+      if(this.upwd===""){
+        err_password.firstElementChild.innerHTML="请输入密码";
+      }else{
+        err_password.firstElementChild.innerHTML="";
+      }
+    },
+    dpassBlur(){
+      if(this.dpass===""){
+        err_dpasswd.firstElementChild.innerHTML="请确认密码";
+      }else{
+        err_dpasswd.firstElementChild.innerHTML="";
+      }
+    },
+
+  }
 }
 </script>
 

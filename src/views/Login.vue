@@ -53,6 +53,9 @@ export default {
   watch:{
     uname(){
       this.log();
+    },
+    upwd(){
+      this.log();
     }
   },
   components:{lheader,lfooter},
@@ -60,12 +63,15 @@ export default {
     log(){
       if(this.uname===""){
         err.innerHTML="手机号不能为空"
+      }else if(!/^1[3-9]\d{9}$/.test(this.uname)){  
+        err.innerHTML="手机号错误"; 
       }else  if(this.upwd===""){
         err.innerHTML="密码不能小于6位"
-      }
-     if(!/^1[3-9]\d{9}$/.test(this.uname)){  
-        err.innerHTML="手机号错误"; 
-      }        
+      }else if(!/^\w{6,}$/.test(this.upwd)){
+        err.innerHTML="密码不能小于6位";
+      }else{
+        err.innerHTML="";
+      }     
     }
   }
 }
