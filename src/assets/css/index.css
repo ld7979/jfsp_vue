@@ -1,0 +1,95 @@
+ul,li,p{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+a{text-decoration: none;  color:#333;}
+.clearfix{ clear: both;}
+.clearfix:after{
+content: "";
+display: block;
+clear: both;
+}
+
+#banner{
+  width:100%;
+}
+#banner img{
+  width:100%;
+  height: 100%;
+}
+#i_content{
+  width:1000px;
+  margin:0 auto;
+}
+/* 精选菜谱 */
+.i_title{
+  font-size:20px;
+  font-weight: bold;
+  margin-top:40px;
+  line-height: 20px;
+  text-align: left;
+}
+.i_title a{
+  float: right;
+  font-size:13px;
+  color:#256DC6;
+  height:20px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.recipe-list{
+  width:1000px;
+}
+.i_item{
+  width:220px;
+  height:270px;
+  float: left;
+  margin:25px 40px 0 0;
+}
+.i_item>div{
+  text-align: left;
+}
+.recipe-list .cover{
+  width:220px;
+  height:220px;
+  display:block;
+  position: relative;
+  overflow: hidden;
+}
+.br8{
+  border-radius: 8px;
+}
+.text-lips{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.recipe-list .name{
+  width:220px;
+  height:35px;
+  line-height: 35px;
+  display: block;
+  font-size:15px
+}
+.recipe-list .author{
+  font-size:12px;
+  height:16px;
+  line-height: 13px;
+}
+.author_name{
+  display: inline-block;
+  max-width: 184px;
+  vertical-align: middle;
+}
+.name:hover,.author_name:hover{
+  color:#FFB31A;
+}
+.progr{
+  margin-left:3px;
+  width:16px;
+  height:16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../image/level_icon.png) no-repeat;
+}
