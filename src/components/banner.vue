@@ -1,7 +1,7 @@
 <template>
     <swiper :options="swiperOption">
       <swiper-slide class="swiper-slide" v-for="(item,index) of slide" :key="index">
-        <img :src=slide[index]>
+        <img :src="slide[index]">
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>   <!-- 分页 -->
       <div class="swiper-button-prev" slot="button-prev"></div>  <!-- 箭头左 --> 
@@ -14,7 +14,7 @@ export default {
   name: 'App',
   data() {
     return {
-      slide: ["images/01.jpg", "images/01.jpg", "images/01.jpg", "images/01.jpg", "images/01.jpg"],
+      slide: ["images/banner/01.jpg","images/banner/02.jpg", "images/banner/03.jpg", "images/banner/04.jpg"],
       //设置属性
       swiperOption: {
         //显示分页
@@ -48,10 +48,21 @@ export default {
 }
 .swiper-slide {
   width: 100%;
-  height: 500px;
-  line-height: 500px;
-  font-size: 50px;
-  text-align: center;
-  background-color: rosybrown;
+}
+.swiper-slide img{
+  width:100%;
+  height:100%;
+}
+.swiper-button-prev{
+  background-image:url(../../public/images/banner/prev.png) !important; 
+  width:45px !important;
+  left:50px !important;
+  background-size: 45px 44px !important;
+}
+.swiper-button-next{
+  background-image:url(../../public/images/banner/next.png) !important; 
+  width:45px !important;
+  right:50px !important;
+  background-size: 45px 44px !important;
 }
 </style>

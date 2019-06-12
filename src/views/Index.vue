@@ -2,9 +2,6 @@
   <div>
     <myheader></myheader>
     <banner></banner>
-    <div id="banner">
-      <img src="images/banner/01.jpg">
-    </div>
     <div id="i_content" class="clearfix">
       <!-- 精选菜谱 -->
       <p class=i_title>每日精选菜谱 <router-link to="">更多&gt;</router-link></p>
