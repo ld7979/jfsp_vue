@@ -34,6 +34,8 @@ clear: both;
 }
 .recipe-list{
   width:1000px;
+  position: relative;
+  z-index: -1;
 }
 .i_item{
   width:220px;
@@ -95,4 +97,58 @@ clear: both;
   display: inline-block;
   border-radius: 50px;
   margin-right:5px;
+}
+/* 左边 */
+#i_left{
+  width:690px;
+  float: left;
+}
+/* 热门食材 */
+.material-list{
+  width:690px;
+  height:276px;
+  background: #F1F7FA;
+  margin-top:20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+.m_item{
+  margin:20px 17px 0;
+  text-align: center;
+  overflow: hidden;
+  font-size:13px;
+  width: 80px;
+  height: 104px;
+}
+.m_item a:hover{
+  color:#FFB31A;
+}
+.mt{
+  margin-top:0;
+}
+.m_item img{
+  width:80px;
+  height:80px;
+  display:block;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+/* 精彩主题文章 */
+.hot-article{
+  height:112px;
+  margin:20px 0 30px;
+}
+.cover{
+  width:200px;
+  height:112px;
+  background-image: url(../image/622.jpg);
+
+  overflow: hidden;
+}
+/* 右边 */
+#i_right{
+  width:280px;
+  float: right;
 }

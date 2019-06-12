@@ -87,6 +87,7 @@
           </div>
         </li>
       </ul>
+      <!-- 笔记 -->
       <p class="i_title" style="margin-top:40px;">笔记<router-link to="">更多&gt;</router-link></p>
       <ul class="recipe-list clearfix">
         <li class="i_item">
@@ -134,6 +135,93 @@
           </div>
         </li>
       </ul>
+      <div id="i_left">
+          <p class="i_title" style="margin-top:40px;">热门食材<router-link to="">更多&gt;</router-link></p>
+          <ul class="material-list br8">
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/17.jpg">
+                羊肉
+              </router-link>
+            </li>
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/18.jpg">
+                猪肉
+              </router-link>
+            </li>
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/19.jpg">
+                土豆
+              </router-link>
+            </li>
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/20.jpg">
+                白萝卜
+              </router-link>
+            </li>
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/21.jpg">
+                带鱼
+              </router-link>
+            </li>
+            <li class="m_item">
+              <router-link to="">
+                <img src="images/index/22.jpg">
+                酸菜
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/23.jpg">
+                虾
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/24.jpg">
+                柚子
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/25.jpg">
+                苹果
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/26.jpg">
+                鸡肉
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/27.jpg">
+                芋头
+              </router-link>
+            </li>
+            <li class="m_item mt">
+              <router-link to="">
+                <img src="images/index/28.jpg">
+                蛤蜊
+              </router-link>
+            </li>
+            
+          </ul>
+          <p class="i_title" style="margin-top:40px;">精彩主题文章<router-link to="">更多&gt;</router-link></p>
+          <div class="article">
+            <div class="hot_article">
+              <router-link class="cover br8" to=""></router-link>
+              <span>寻味之旅 | 我们在北京和大家共度了一个吃吃喝喝的欢乐下午</span>
+            </div>
+            <ul></ul>
+          </div>
+      </div>
+      <div id="i_right"></div>
     </div>
   </div>
 </template>
