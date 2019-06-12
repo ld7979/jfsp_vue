@@ -215,8 +215,15 @@
           <p class="i_title" style="margin-top:40px;">精彩主题文章<router-link to="">更多&gt;</router-link></p>
           <div class="article">
             <div class="hot_article">
-              <router-link class="cover br8" to=""></router-link>
-              <span>寻味之旅 | 我们在北京和大家共度了一个吃吃喝喝的欢乐下午</span>
+              <router-link class="cover" to="" >
+                <img src="images/index/622.jpg">
+              </router-link>
+              <span class="info">
+                <a class="name">[食力派]寻味之旅 | 我们在北京和大家共度了一个吃吃喝喝的欢乐下午</a> <br>
+                <span class="source">来自：走哪吃哪主题站</span> 
+                <span>作者：<a>少油少盐</a></span> 
+              </span>
+              
             </div>
             <ul></ul>
           </div>
