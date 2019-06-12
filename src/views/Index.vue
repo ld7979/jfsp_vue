@@ -1,6 +1,7 @@
 <template>
   <div>
     <myheader></myheader>
+    <banner></banner>
     <div id="banner">
       <img src="images/banner/01.jpg">
     </div>
@@ -55,13 +56,13 @@
 
 <script>
 import myheader from '../components/myHeader'
+import banner from '../components/banner'
 export default {
   name: "Index",
   data() {
     return {};
   },
-  components:{myheader}
-  
+  components:{myheader,banner}
 };
 </script>
 
