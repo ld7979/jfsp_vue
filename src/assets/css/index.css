@@ -67,7 +67,7 @@ clear: both;
 }
 .author{
   font-size:12px;
-  height:16px;
+  height:25px;
   line-height: 13px;
 }
 .author_name{
@@ -229,4 +229,58 @@ clear: both;
 #i_right{
   width:280px;
   float: right;
+}
+/* 广告 */
+.ad{
+  width:280px;
+  margin-top:40px;
+  text-align: left;
+  border:1px solid #fff;
+}
+.ad:hover{
+  border:1px solid #ddd;
+}
+.ad a{
+  font-size:18px;
+}
+/* 达人 */
+.dr_list li{
+  display: flex;
+  justify-content: space-between;
+  margin-top:20px;
+  height:46px;
+}
+.dr_headicon{
+  width:46px;
+  height:46px;
+  vertical-align: top;
+}
+.dr_info{
+  display: inline-block;
+  text-align: left;
+  margin-left: 5px;
+}
+.dr_info>a:hover{
+  color:#FFB31A;
+}
+.dr_info a:first-child{
+  font-size:15px;
+}
+.dr_info p{
+  font-size:12px;
+  color:#999;
+  margin-top:6px;
+}
+.gz{
+  width:73px;
+  height:30px;
+  line-height: 30px;
+  display: block;
+  border:1px solid #333;
+  border-radius: 5px;
+  margin-top:8px;
+  font-size:12px;
+}
+.gz span{
+  font-size:14px;
 }

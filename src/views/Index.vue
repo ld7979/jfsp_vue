@@ -320,7 +320,82 @@
             
           </ul>
       </div>
-      <div id="i_right"></div>
+      <div id="i_right">
+        <!-- 广告 -->
+        <div class="ad">
+          <img class="br8" src="images/index/50.jpg">
+          <a href="#">煎饼果子加盟店</a>
+        </div>
+        <!-- 达人 -->
+        <p class="i_title" style="margin-top:40px;">豆果达人<router-link to="/">更多&gt;</router-link></p>
+        <ul class="dr_list">
+          <li>
+            <div>
+              <a href="#">
+                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+              </a>
+              <div class="dr_info">
+                <a href="#">颖涵的快厨房 </a>
+                <a class="progr" style="background-position: 0 -22px;" href="#"></a>
+                <p>60952粉丝</p>
+              </div>
+            </div>
+            <a class="gz" href="#"><span>+</span> 关注</a>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+              </a>
+              <div class="dr_info">
+                <a href="#">颖涵的快厨房 </a>
+                <a class="progr" style="background-position: 0 -22px;" href="#"></a>
+                <p>60952粉丝</p>
+              </div>
+            </div>
+            <a class="gz" href="#"><span>+</span> 关注</a>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+              </a>
+              <div class="dr_info">
+                <a href="#">颖涵的快厨房 </a>
+                <a class="progr" style="background-position: 0 -22px;" href="#"></a>
+                <p>60952粉丝</p>
+              </div>
+            </div>
+            <a class="gz" href="#"><span>+</span> 关注</a>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+              </a>
+              <div class="dr_info">
+                <a href="#">颖涵的快厨房 </a>
+                <a class="progr" style="background-position: 0 -22px;" href="#"></a>
+                <p>60952粉丝</p>
+              </div>
+            </div>
+            <a class="gz" href="#"><span>+</span> 关注</a>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+              </a>
+              <div class="dr_info">
+                <a href="#">颖涵的快厨房 </a>
+                <a class="progr" style="background-position: 0 -22px;" href="#"></a>
+                <p>60952粉丝</p>
+              </div>
+            </div>
+            <a class="gz" href="#"><span>+</span> 关注</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
