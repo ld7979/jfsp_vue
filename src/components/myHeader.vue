@@ -130,8 +130,10 @@ export default {
       this.fdisp=false;
     },
     myactive(task){
+      this.acdex=false;
+      this.cdex=false;
       this.activ=task;
-    },
+    },    
     indsel(){
       this.cdex=false;
       this.acdex=true;
@@ -140,14 +142,6 @@ export default {
       this.acdex=false;
       this.cdex=true;
     },
-    
-    select($event){
-       if(location.href==$event.target.href){
-         this.acdex=false;
-         this.cdex=false;
-         $event.target.parentElement.className="act";
-       }
-    }
   }
 }
 </script>
