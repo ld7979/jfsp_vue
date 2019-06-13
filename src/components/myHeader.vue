@@ -11,6 +11,7 @@
             <span class="nass"></span>
           </router-link>
           <div v-show="cdisp"  class="ctip">
+            <span class="arwwj"></span>
             <div class="ctab clearfix">
               <router-link to="javascript:;" target="_blank">
                 <img src="images/header/jx3.png" >
@@ -83,6 +84,7 @@
       <div class="pubt" @mouseover="fmouseOver" @mouseout="fmouseOut">
         <router-link  to="javascript:;">发布</router-link>
         <div v-show="fdisp" class="pubt-box">
+            <span class="arwwj"></span>
           <router-link to="javascript:;">发布菜单</router-link>
           <router-link to="javascript:;">创建菜单</router-link>
         </div>

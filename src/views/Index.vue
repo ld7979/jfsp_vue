@@ -345,12 +345,12 @@
           <li>
             <div>
               <a href="#">
-                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+                <img class="dr_headicon br8" src="images/index/52.png" alt="">
               </a>
               <div class="dr_info">
-                <a href="#">颖涵的快厨房 </a>
+                <a href="#">美食台 </a>
                 <a class="progr" style="background-position: 0 -22px;" href="#"></a>
-                <p>60952粉丝</p>
+                <p>243039粉丝</p>
               </div>
             </div>
             <a class="gz" href="#"><span>+</span> 关注</a>
@@ -358,12 +358,12 @@
           <li>
             <div>
               <a href="#">
-                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+                <img class="dr_headicon br8" src="images/index/53.jpg" alt="">
               </a>
               <div class="dr_info">
-                <a href="#">颖涵的快厨房 </a>
+                <a href="#">康尼陈 </a>
                 <a class="progr" style="background-position: 0 -22px;" href="#"></a>
-                <p>60952粉丝</p>
+                <p>68732粉丝</p>
               </div>
             </div>
             <a class="gz" href="#"><span>+</span> 关注</a>
@@ -371,12 +371,12 @@
           <li>
             <div>
               <a href="#">
-                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+                <img class="dr_headicon br8" src="images/index/54.jpg" alt="">
               </a>
               <div class="dr_info">
-                <a href="#">颖涵的快厨房 </a>
+                <a href="#">桌饭 </a>
                 <a class="progr" style="background-position: 0 -22px;" href="#"></a>
-                <p>60952粉丝</p>
+                <p>80463粉丝</p>
               </div>
             </div>
             <a class="gz" href="#"><span>+</span> 关注</a>
@@ -384,16 +384,56 @@
           <li>
             <div>
               <a href="#">
-                <img class="dr_headicon br8" src="images/index/51.jpeg" alt="">
+                <img class="dr_headicon br8" src="images/index/55.jpg" alt="">
               </a>
               <div class="dr_info">
-                <a href="#">颖涵的快厨房 </a>
+                <a href="#">程灿妈咪CCM </a>
                 <a class="progr" style="background-position: 0 -22px;" href="#"></a>
-                <p>60952粉丝</p>
+                <p>125501粉丝</p>
               </div>
             </div>
             <a class="gz" href="#"><span>+</span> 关注</a>
           </li>
+        </ul>
+        <!-- 商城精选 -->
+        <p class="i_title" style="margin-top:40px;">商城精选<router-link to="/">更多&gt;</router-link></p>
+        <ul class="mall_list">
+          <li>
+            <a href="#">
+              <img src="images/index/56.jpg">
+            </a>
+            <div class="ma_info">
+              <a href="#">广西北部湾海鸭蛋 20枚装 包邮</a>
+              <p class="ma_price">￥39.90</p>
+              <p>月售2101</p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index/57.jpg">
+            </a>
+            <div class="ma_info">
+              <a href="#">【买2送1】雅克菱 植物萃取美白牙粉50g</a>
+              <p class="ma_price">￥35.00</p>
+              <p>月售151</p>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/index/58.jpg">
+            </a>
+            <div class="ma_info">
+              <a href="#">新良 安心油条粉 1kg</a>
+              <p class="ma_price">￥17.80</p>
+              <p>月售227</p>
+            </div>
+          </li>          
+        </ul>
+        <!-- 豆果实验室 -->
+        <p class="i_title" style="margin-top:40px;">豆果实验室</p>
+        <ul class="dg_list">
+          <li><b>·</b> <a href="#">智能找菜</a> </li>
+          <li><b>·</b> <a href="#">豆果测试题</a></li>  
         </ul>
       </div>
     </div>

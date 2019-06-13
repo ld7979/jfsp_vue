@@ -87,6 +87,14 @@ clear: both;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.arwwj{
+  height: 15px;
+  width: 492px;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -15px;
+}
 .ctab{
   line-height: 55px;
 }

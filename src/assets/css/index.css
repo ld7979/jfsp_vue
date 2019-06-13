@@ -247,7 +247,7 @@ clear: both;
 .dr_list li{
   display: flex;
   justify-content: space-between;
-  margin-top:20px;
+  margin-top:25px;
   height:46px;
 }
 .dr_headicon{
@@ -283,4 +283,56 @@ clear: both;
 }
 .gz span{
   font-size:14px;
+}
+/* 商城精选 */
+.mall_list{
+  width:280px;
+  height:324px;
+  margin-top:5px;
+}
+.mall_list img{
+  vertical-align: top;
+  width:88px;
+  height:88px;
+  border-radius: 5px;
+}
+.mall_list li{
+  margin-top:25px;
+  height:88px;
+}
+.ma_info{
+  width:186px;
+  text-align: left;
+  margin-left: 6px;
+  display: inline-block;
+}
+.ma_info>a{
+  height:40px;
+  display: inline-block;
+  font-size:15px;
+  line-height: 20px;
+}
+.ma_info>a:hover{
+  color:#FFB31A;
+}
+.ma_info .ma_price{
+  font-size:16px;
+  color:#FF4C44;
+  margin-top:4px;
+}
+.ma_info>p:last-child{
+  font-size:12px;
+  color:#999;
+  margin-top:7px;
+}
+/* 豆果实验室 */
+.dg_list li{
+  text-align: left;
+  margin-top:25px;
+}
+.dg_list li b{
+  margin-right:5px;
+}
+.dg_list li a:hover{
+  color:#FFB31A;
 }
