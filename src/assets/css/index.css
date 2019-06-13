@@ -174,6 +174,7 @@ clear: both;
 .alist{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .alist li{
   width:320px;
@@ -189,6 +190,40 @@ clear: both;
 }
 .alist li b{
   margin-right:5px;
+}
+/* 大家的作品 */
+.zp_list{
+  margin-top:25px;
+}
+.zp_list li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.zp_left{
+  width:305px;
+  display: flex;
+  justify-content: space-between;
+}
+.zp_left img,.zp_right img{
+  width:110px;
+  height:110px;
+  vertical-align: middle;
+}
+.zpinfo{
+  text-align: left;
+  padding-top:26px;
+}
+.zpinfo>span{
+  height:40px;
+  display: inline-block;
+}
+.zpinfo:hover{
+  color:#FFB31A;
+}
+.zp_right img{
+  margin-left:15px;
+  border-radius: 8px;
 }
 /* 右边 */
 #i_right{

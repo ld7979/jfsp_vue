@@ -233,8 +233,92 @@
                 <b>·</b>
                 <router-link to="/" target="_blank">美味橄榄油，健康添活力</router-link>
               </li>
+              <li>
+                <b>·</b>
+                <router-link to="/" target="_blank">三八女神节多彩智利葡萄让生活更精彩</router-link>
+              </li>
+              <li>
+                <b>·</b>
+                <router-link to="/" target="_blank">九阳发布“悦享健康”新主张 3大颠覆性新品亮相</router-link>
+              </li>
+              <li>
+                <b>·</b>
+                <router-link to="/" target="_blank">“智利核果月”今春在沪拉开帷幕 油桃布林西梅精彩纷呈</router-link>
+              </li>
+              <li>
+                <b>·</b>
+                <router-link to="/" target="_blank">智利蓝莓亮相上海影院 鲜甜健康小食备受欢迎</router-link>
+              </li>
             </ul>
           </div>
+          <p class="i_title" style="margin-top:40px;">大家的作品<router-link to="/">更多&gt;</router-link></p>
+          <ul class="zp_list">
+            <li>
+              <div class="zp_left">
+                <a href="javascript:;">
+                  <img class="br8" src="images/index/31.jpg">
+                </a>
+                <a class="zpinfo" href="javascript:;">
+                  <span>涛涛妈咪的作品</span> <br>
+                  <span>对照菜谱做出来的作品<b>9436</b>个</span>
+                </a>
+              </div>
+              <div class="zp_right">
+                <img src="images/index/34.jpg">
+                <img src="images/index/35.jpeg">
+                <img src="images/index/36.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="zp_left">
+                <a href="javascript:;">
+                  <img class="br8" src="images/index/32.jpg">
+                </a>
+                <a class="zpinfo" href="javascript:;">
+                  <span>万万的作品</span> <br>
+                  <span>对照菜谱做出来的作品<b>1174</b>个</span>
+                </a>
+              </div>
+              <div class="zp_right">
+                <img src="images/index/38.jpg">
+                <img src="images/index/39.jpg">
+                <img src="images/index/40.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="zp_left">
+                <a href="javascript:;">
+                  <img class="br8" src="images/index/33.jpg">
+                </a>
+                <a class="zpinfo" href="javascript:;">
+                  <span>dUcky的作品</span> <br>
+                  <span>对照菜谱做出来的作品<b>1472</b>个</span>
+                </a>
+              </div>
+              <div class="zp_right">
+                <img src="images/index/41.jpeg">
+                <img src="images/index/42.jpeg">
+                <img src="images/index/43.jpg">
+              </div>
+            </li>
+            <li>
+              <div class="zp_left">
+                <a href="javascript:;">
+                  <img class="br8" src="images/index/37.jpg">
+                </a>
+                <a class="zpinfo" href="javascript:;">
+                  <span>爱烘焙的加菲的作品</span> <br>
+                  <span>对照菜谱做出来的作品<b>535</b>个</span>
+                </a>
+              </div>
+              <div class="zp_right">
+                <img src="images/index/44.jpg">
+                <img src="images/index/45.jpeg">
+                <img src="images/index/46.jpg">
+              </div>
+            </li>
+            
+          </ul>
       </div>
       <div id="i_right"></div>
     </div>
