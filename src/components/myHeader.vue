@@ -6,71 +6,71 @@
       </router-link>
       <ul class="ul_nav">
         <li :class="{act:acdex}"><router-link to="/" @click.native="indsel">首页</router-link></li>
-        <li :class="{act:cdex}" style="position: relative" >
-          <router-link @click.native="select" @mouseover.native="cmouseOver" @mouseout.native="cmouseOut" to="/">菜谱
+        <li @mouseout="cmouseOut"  @mouseover="cmouseOver" :class="{act:cdex}" style="position: relative" >
+          <router-link @click.native="select"   to="/">菜谱
             <span class="nass"></span>
           </router-link>
           <div v-show="cdisp"  class="ctip">
             <div class="ctab clearfix">
-              <a to="javascript:;" target="_blank">
+              <router-link to="javascript:;" target="_blank">
                 <img src="images/header/jx3.png" >
                 精选
-              </a>
-              <a to="javascript:;" target="_blank">
+              </router-link>
+              <router-link to="javascript:;" target="_blank">
                 <img src="images/header/menu3.png" >
                 菜单
-              </a>
+              </router-link>
             </div>
             <div class="citem clearfix">
               <span>食材</span>
               <div>
-                <a to="javascript:;" target="_blank">猪肉</a>
-                <a to="javascript:;" target="_blank">羊肉</a>
-                <a to="javascript:;" target="_blank">鸡肉</a>
-                <a to="javascript:;" target="_blank">牛肉</a>
-                <a to="javascript:;" target="_blank">鱼</a>
-                <a to="javascript:;" target="_blank">蔬菜</a>
-                <a to="javascript:;" target="_blank">鲜果</a>
-                <a to="javascript:;">更多
+                <router-link to="javascript:;" target="_blank">猪肉</router-link>
+                <router-link to="javascript:;" target="_blank">羊肉</router-link>
+                <router-link to="javascript:;" target="_blank">鸡肉</router-link>
+                <router-link to="javascript:;" target="_blank">牛肉</router-link>
+                <router-link to="javascript:;" target="_blank">鱼</router-link>
+                <router-link to="javascript:;" target="_blank">蔬菜</router-link>
+                <router-link to="javascript:;" target="_blank">鲜果</router-link>
+                <router-link to="javascript:;" target="_blank">更多
                   <img src="images/header/more2.png">
-                </a>
+                </router-link>
               </div>
             </div>
             <div class="citem clearfix">
               <span>菜式</span>
               <div>
-                <a to="javascript:;" target="_blank">下饭菜</a>
-                <a to="javascript:;" target="_blank">快手菜</a>
-                <a to="javascript:;" target="_blank">凉菜</a>
-                <a to="javascript:;" target="_blank">宴客菜</a>
-                <a to="javascript:;" target="_blank">私房菜</a>
-                <a to="javascript:;" target="_blank">素食主义</a>
-                <a to="javascript:;" target="_blank">下酒菜</a>
-                <a to="javascript:;">更多
+                <router-link to="javascript:;" target="_blank">下饭菜</router-link>
+                <router-link to="javascript:;" target="_blank">快手菜</router-link>
+                <router-link to="javascript:;" target="_blank">凉菜</router-link>
+                <router-link to="javascript:;" target="_blank">宴客菜</router-link>
+                <router-link to="javascript:;" target="_blank">私房菜</router-link>
+                <router-link to="javascript:;" target="_blank">素食主义</router-link>
+                <router-link to="javascript:;" target="_blank">下酒菜</router-link>
+                <router-link to="javascript:;">更多
                   <img src="images/header/more2.png">
-                </a>
+                </router-link>
               </div>
             </div>
             <div class="citem clearfix">
               <span>烘焙</span>
               <div>
-                <a to="javascript:;" target="_blank">月饼</a>
-                <a to="javascript:;" target="_blank">披萨</a>
-                <a to="javascript:;" target="_blank">蛋挞</a>
-                <a to="javascript:;" target="_blank">布丁</a>
-                <a to="javascript:;" target="_blank">中式糕点</a>
-                <a to="javascript:;" target="_blank">泡芙</a>
-                <a to="javascript:;" target="_blank">松饼</a>
-                <a to="javascript:;">更多
+                <router-link to="javascript:;" target="_blank">月饼</router-link>
+                <router-link to="javascript:;" target="_blank">披萨</router-link>
+                <router-link to="javascript:;" target="_blank">蛋挞</router-link>
+                <router-link to="javascript:;" target="_blank">布丁</router-link>
+                <router-link to="javascript:;" target="_blank">中式糕点</router-link>
+                <router-link to="javascript:;" target="_blank">泡芙</router-link>
+                <router-link to="javascript:;" target="_blank">松饼</router-link>
+                <router-link to="javascript:;">更多
                   <img src="images/header/more2.png">
-                </a>
+                </router-link>
               </div>
             </div>
             <div class="cmore">
-               <a to="javascript:;">
+               <router-link to="javascript:;">
                  查看更多
                  <img src="images/header/more2.png" alt="">
-               </a>
+               </router-link>
             </div>
           </div>
         </li>
@@ -80,8 +80,8 @@
         <input type="text" value="搜索菜谱、菜单、食材、用户">
         <router-link class="sear" to="javascript:;"></router-link>
       </div>
-      <div class="pubt">
-        <router-link @mouseover.native="fmouseOver" @mouseout.native="fmouseOut" to="javascript:;">发布</router-link>
+      <div class="pubt" @mouseover="fmouseOver" @mouseout="fmouseOut">
+        <router-link  to="javascript:;">发布</router-link>
         <div v-show="fdisp" class="pubt-box">
           <router-link to="javascript:;">发布菜单</router-link>
           <router-link to="javascript:;">创建菜单</router-link>
