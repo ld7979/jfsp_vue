@@ -13,8 +13,6 @@ clear: both;
 #i_content{
   width:1000px;
   margin:0 auto;
-  position: relative;
-  z-index: -1;
 }
 /* 精选菜谱 */
 .i_title{
@@ -33,21 +31,24 @@ clear: both;
   line-height: 20px;
   font-weight: normal;
 }
+.recipes{
+  width:1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .i_item{
   width:220px;
   height:270px;
-  float: left;
   margin:25px 40px 0 0;
 }
 .i_item>div{
   text-align: left;
 }
-.cover{
+.cover>img{
   width:220px;
   height:220px;
   display:block;
-  position: relative;
-  overflow: hidden;
 }
 .br8{
   border-radius: 8px;

@@ -5,7 +5,7 @@
     <div id="i_content" class="clearfix">
       <!-- 精选菜谱 -->
       <p class="i_title">每日精选菜谱 <router-link to="/">更多&gt;</router-link></p>
-      <ul class="clearfix">
+      <ul class="recipes clearfix">
         <li class="i_item">
           <router-link class="cover br8" to="/" target="_blank"><img src="images/index/01.jpeg"></router-link>
           <div>
@@ -89,7 +89,7 @@
       </ul>
       <!-- 笔记 -->
       <p class="i_title" style="margin-top:40px;">笔记<router-link to="/">更多&gt;</router-link></p>
-      <ul class="clearfix">
+      <ul class="recipes clearfix">
         <li class="i_item">
           <router-link class="cover br8" to="/" target="_blank"><img src="images/index/09.jpg"></router-link>
           <div>
