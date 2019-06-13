@@ -137,10 +137,12 @@ export default {
     indsel(){
       this.cdex=false;
       this.acdex=true;
+      this.activ="";
     },
     select(){
       this.acdex=false;
       this.cdex=true;
+      this.activ="";
     },
   }
 }
