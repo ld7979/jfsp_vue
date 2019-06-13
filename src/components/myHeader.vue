@@ -5,9 +5,9 @@
         <img src="images/header/logo3.png">
       </router-link>
       <ul class="ul_nav">
-        <li class="act"><router-link to="/" @click.native="select($event)">首页</router-link></li>
-        <li style="position: relative" >
-          <router-link @mouseover.native="cmouseOver" @mouseout.native="cmouseOut" to="/c" @click.native="select($event)" >菜谱
+        <li :class="{act:acdex}"><router-link to="/" @click.native="indsel">首页</router-link></li>
+        <li :class="{act:cdex}" style="position: relative" >
+          <router-link @click.native="select" @mouseover.native="cmouseOver" @mouseout.native="cmouseOut" to="/">菜谱
             <span class="nass"></span>
           </router-link>
           <div v-show="cdisp"  class="ctip">
@@ -74,11 +74,7 @@
             </div>
           </div>
         </li>
-        <li :class="{act:activ==task}" v-for="(task,index) of tasks" :key="index" @click="myactive(task)"><router-link  :to="task.method">{{task.name}}</router-link></li>
-        <!-- <li><a to="javascript:;">主题站</a></li>
-        <li><a to="javascript:;">商城</a></li>
-        <li><a to="javascript:;">动漫</a></li>
-        <li><a to="javascript:;">药品</a></li> -->
+        <li :class="{act:activ==task}" v-for="(task,index) of tasks" :key="index" ><router-link @click.native="myactive(task)"  :to="task.method">{{task.name}}</router-link></li>
       </ul>
       <div class="search"> 
         <input type="text" value="搜索菜谱、菜单、食材、用户">
@@ -116,6 +112,8 @@ export default {
         {name:"药品",method:"/"},
       ],
       activ:0,
+      acdex:true,
+      cdex:false,
     }
   },
   methods:{
@@ -134,8 +132,19 @@ export default {
     myactive(task){
       this.activ=task;
     },
+    indsel(){
+      this.cdex=false;
+      this.acdex=true;
+    },
+    select(){
+      this.acdex=false;
+      this.cdex=true;
+    },
+    
     select($event){
        if(location.href==$event.target.href){
+         this.acdex=false;
+         this.cdex=false;
          $event.target.parentElement.className="act";
        }
     }
