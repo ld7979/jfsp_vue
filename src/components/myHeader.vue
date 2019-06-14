@@ -109,7 +109,7 @@ export default {
         // {name:"菜谱",method:"/"},
         {name:"笔记",method:"/"},
         {name:"主题站",method:"/"},
-        {name:"商城",method:"/"},
+        {name:"商城",method:"/product"},
         {name:"动漫",method:"/"},
         {name:"药品",method:"/"},
       ],
