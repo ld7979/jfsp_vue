@@ -7,7 +7,7 @@
       <ul class="ul_nav">
         <li :class="{act:acdex}"><router-link to="/" @click.native="indsel">首页</router-link></li>
         <li @mouseout="cmouseOut"  @mouseover="cmouseOver" :class="{act:cdex}" style="position: relative" >
-          <router-link @click.native="select"   to="/">菜谱
+          <router-link @click.native="select"   to="/caipu">菜谱
             <span class="nass"></span>
           </router-link>
           <div v-show="cdisp"  class="ctip">
@@ -17,7 +17,7 @@
                 <img src="images/header/jx3.png" >
                 精选
               </router-link>
-              <router-link to="javascript:;" target="_blank">
+              <router-link to="/caidan" target="_blank">
                 <img src="images/header/menu3.png" >
                 菜单
               </router-link>
@@ -32,7 +32,7 @@
                 <router-link to="javascript:;" target="_blank">鱼</router-link>
                 <router-link to="javascript:;" target="_blank">蔬菜</router-link>
                 <router-link to="javascript:;" target="_blank">鲜果</router-link>
-                <router-link to="javascript:;" target="_blank">更多
+                <router-link to="/shicai" target="_blank">更多
                   <img src="images/header/more2.png">
                 </router-link>
               </div>
@@ -47,7 +47,7 @@
                 <router-link to="javascript:;" target="_blank">私房菜</router-link>
                 <router-link to="javascript:;" target="_blank">素食主义</router-link>
                 <router-link to="javascript:;" target="_blank">下酒菜</router-link>
-                <router-link to="javascript:;">更多
+                <router-link to="/caidan">更多
                   <img src="images/header/more2.png">
                 </router-link>
               </div>
@@ -62,7 +62,7 @@
                 <router-link to="javascript:;" target="_blank">中式糕点</router-link>
                 <router-link to="javascript:;" target="_blank">泡芙</router-link>
                 <router-link to="javascript:;" target="_blank">松饼</router-link>
-                <router-link to="javascript:;">更多
+                <router-link to="/fenlei">更多
                   <img src="images/header/more2.png">
                 </router-link>
               </div>

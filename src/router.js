@@ -8,6 +8,14 @@ import productDetails from './views/product_details'
 import biji from './components/biji'
 import dg_details from './components/dg_details'
 import dg_person from './components/dg_person'
+import caipu from './views/caipu'
+import jingxuan from './components/jingxuan'
+import shicai from './views/shicai'
+import shicai3 from './components/shicai3'
+import caidan from './views/caidan'
+import caipuNav from './components/caipuNav.vue'
+import fenlei from './views/fenlei.vue'
+import caipudetails from './views/caipudetails.vue'
 
 
 Vue.use(Router)
@@ -21,7 +29,16 @@ export default new Router({
     {path:'/details',component:productDetails},
 	  {path:"/biji",component:biji},
     {path:'/dg_details',component:dg_details},
-    {path:"/dg_person",component:dg_person}
+    {path:"/dg_person",component:dg_person},
+    {path: '/caipudetails',name: 'caipudetails',component: caipudetails}, 
+    {path: '/fenlei',name: 'fenlei',component: fenlei}, 
+    {path: '/caipuNav',name: 'caipuNav',component: caipuNav}, 
+    {path: '/caidan',name: 'caidan',component: caidan},  
+    {path: '/shicai',name: 'shicai',component: shicai}, 
+    {path: '/shicai3',name: 'shicai3',component: shicai3},  
+    {path: '/jingxuan',name: 'jingxuan',component: jingxuan},  
+    {path: '/caipu',name: 'caipu',component: caipu},   
+
        
   ]
 })
