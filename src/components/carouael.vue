@@ -1,5 +1,5 @@
 <template>
-    <swiper :options="swiperOption">
+    <swiper style="height:400px" :options="swiperOption">
       <swiper-slide class="swiper-slide" >
         <img src="../../public/imgs/cp1.jpg">
       </swiper-slide>
@@ -55,7 +55,7 @@ export default {
   width: 100%;
 }
 .swiper-slide img{
-  width:50%;
+  width:100%;
   height:100%;
 }
 .swiper-button-prev{
