@@ -123,6 +123,7 @@ export default {
 }
 .goods-info .goods-bimg {
     position: relative;
+    z-index:-1;
     width: 320px;
     height: 320px;
     margin-right: 20px;
@@ -221,8 +222,7 @@ button{
     /* background-color:#f4f4f4; */
 }
 input{
-    height:30px;
-   
+    height:34px;   
 }
 ul,li{
     list-style:none;
