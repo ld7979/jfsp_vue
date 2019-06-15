@@ -15,7 +15,7 @@
         </div>
         <div class="menu-list">
             <ul>    
-                <li v-for="n of 12">
+                <li v-for="(n,i) of 12" :key="i">
                     <a href="#">
                         <img src="../assets/douguo/1.jpg" alt="">
                         <div>
@@ -59,7 +59,7 @@ export default {
 <style scoped>
      /* .type-tab样式 */
      .content{
-        width:1000px;
+        width:1000px; 
         margin:80px auto 0;
     }
     .type-tab>a{
