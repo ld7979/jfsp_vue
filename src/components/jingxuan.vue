@@ -6,7 +6,7 @@
         <div>
             <ul class="content">
                 <li v-for="(item,index) of list" :key="index">
-                    <a href="#"> <img :src="`http://127.0.0.1:3000/${item.imgUrl}`" alt=""></a>
+                    <a href="#/caipudetails"> <img :src="`http://127.0.0.1:3000/${item.imgUrl}`" alt=""></a>
                     <a>{{item.title}}</a><br>
                     <div class="author">
                         <div>
