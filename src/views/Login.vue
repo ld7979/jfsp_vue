@@ -9,7 +9,7 @@
       </div>
       <div class="dglo">
         <div class="dlzc">
-          <span>登录</span>
+          <span>登录拉</span>
           <span><router-link to="/reg">去注册 &gt;</router-link></span>
         </div>
         <div class="logone">
@@ -63,15 +63,15 @@ export default {
     log(){
       if(this.uname===""){
         err.innerHTML="手机号不能为空"
-      }else if(!/^1[3-9]\d{9}$/.test(this.uname)){  
-        err.innerHTML="手机号错误"; 
+      }else if(!/^1[3-9]\d{9}$/.test(this.uname)){
+        err.innerHTML="手机号错误";
       }else  if(this.upwd===""){
         err.innerHTML="密码不能小于6位"
       }else if(!/^\w{6,}$/.test(this.upwd)){
         err.innerHTML="密码不能小于6位";
       }else{
         err.innerHTML="";
-      }     
+      }
     }
   }
 }
