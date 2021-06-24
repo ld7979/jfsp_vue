@@ -9,7 +9,7 @@
       </div>
       <div class="dglo">
         <div class="dlzc">
-          <span>登录拉</span>
+          <span>登录</span>
           <span><router-link to="/reg">去注册 &gt;</router-link></span>
         </div>
         <div class="logone">
